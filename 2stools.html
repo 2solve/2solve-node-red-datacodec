@@ -1,4 +1,4 @@
-<script type="text/html" data-template-name="2stools-packetdecode">
+<script type="text/html" data-template-name="2stools-datacodec">
   <div class="form-row">
     <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
     <input type="text" id="node-input-name" placeholder="Name" />
@@ -11,7 +11,7 @@
 </script>
 
 <script type="text/javascript">
-  RED.nodes.registerType("2stools-packetdecode", {
+  RED.nodes.registerType("2stools-datacodec", {
     category: "function",
     color: "#a6bbcf",
     defaults: {
@@ -22,7 +22,7 @@
     outputs: 1,
     icon: "file.png",
     label: function () {
-      return this.name || "2stools-packetdecode";
+      return this.name || "2stools-datacodec";
     },
   });
 </script>
