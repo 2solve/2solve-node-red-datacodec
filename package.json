@@ -1,16 +1,16 @@
 {
-  "_from": "node-red-2stools-packetdecode@0.9.26",
-  "_id": "node-red-2stools-packetdecode@0.9.26",
+  "_from": "@tosolve/node-red-datacodec@0.9.26",
+  "_id": "@tosolve/node-red-datacodec@0.9.26",
   "_inBundle": false,
   "_integrity": "sha512-JMpmOMNJolvEJVkPm3Ke8Mmz5encLy7H6uKMPDmhZ7VG7Pe1L3DWOEajPMBSBELX5DbxdiCIPQ0WbrjdhfYXfw==",
-  "_location": "/node-red-2stools-packetdecode",
+  "_location": "/@tosolve/node-red-datacodec",
   "_phantomChildren": {},
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "node-red-2stools-packetdecode@0.9.26",
-    "name": "node-red-2stools-packetdecode",
-    "escapedName": "node-red-2stools-packetdecode",
+    "raw": "@tosolve/node-red-datacodec@0.9.26",
+    "name": "@tosolve/node-red-datacodec",
+    "escapedName": "@tosolve/node-red-datacodec",
     "rawSpec": "0.9.26",
     "saveSpec": null,
     "fetchSpec": "0.9.26"
@@ -19,9 +19,9 @@
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/node-red-2stools-packetdecode/-/node-red-2stools-packetdecode-0.9.26.tgz",
+  "_resolved": "https://registry.npmjs.org/@tosolve/node-red-datacodec/-/@tosolve/node-red-datacodec-0.9.26.tgz",
   "_shasum": "3891d58ffcb7bc27f5e15e936d371d000e61bba2",
-  "_spec": "node-red-2stools-packetdecode@0.9.26",
+  "_spec": "@tosolve/node-red-datacodec@0.9.26",
   "_where": "/home/franco/.node-red",
   "author": {
     "name": "2Solve Engenharia e Tecnologia Ltda"
@@ -31,9 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "2stools-daq": "^0.16.0",
-    "hex2dec": "^1.1.2",
-    "ieee-float": "^0.6.0"
+    "@tosolve/datacodec": "^0.18.0"
   },
   "deprecated": false,
   "description": "Decode string data to a respective sensor on IC",
@@ -45,16 +43,19 @@
   ],
   "license": "ISC",
   "main": "",
-  "name": "node-red-2stools-packetdecode",
+  "name": "@tosolve/node-red-datacodec",
   "node-red": {
     "nodes": {
-      "2stools": "2stools.js"
+      "2stools-datacodec": "2stools.js"
     }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/2solve/2STools.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {},
-  "version": "0.16.0"
+  "version": "0.18.1"
 }

@@ -1,4 +1,4 @@
-const { packetDecode } = require("2stools-daq");
+const { packetDecode } = require("@tosolve/datacodec");
 
 module.exports = function (RED) {
   function tosense(config) {
@@ -19,5 +19,5 @@ module.exports = function (RED) {
     });
   }
 
-  RED.nodes.registerType("2stools-packetdecode", tosense);
+  RED.nodes.registerType("2stools-datacodec", tosense);
 };
