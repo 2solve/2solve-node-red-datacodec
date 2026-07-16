@@ -31,7 +31,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "@tosolve/datacodec": "^0.18.2"
+    "@tosolve/datacodec": "^0.19.0"
   },
   "deprecated": false,
   "description": "Decode string data to a respective sensor on IC",
@@ -57,5 +57,5 @@
     "access": "public"
   },
   "scripts": {},
-  "version": "0.18.2"
+  "version": "0.19.0"
 }
