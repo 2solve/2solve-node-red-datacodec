@@ -27,4 +27,28 @@ The underlying codec library has been replaced with [`@tosolve/datacodec`](https
 
 ---
 
+## 0.20.0 (2026-09-17)
+
+### Build
+
+- Bumped `@tosolve/datacodec` to `^0.20.0`.
+
+The underlying codec gained the IOT-NDDI-2602 (NanoDAq) digital input tags, so flows
+using this node now decode eight additional keys without any flow change:
+
+| Tag | ID | Meaning |
+|---|---|---|
+| `EngInp0`..`EngInp3` | 183-186 | Value already converted to engineering units on the device |
+| `FreInp2`, `FreInp3` | 187, 188 | Frequency inputs, channels 3 and 4 |
+| `IntInp2`, `IntInp3` | 189, 190 | Pulse counters, channels 3 and 4 |
+
+The addition is additive: no existing tag, ID, size or type changed, and the node's
+configuration and message contract are unchanged.
+
+Note: the caret range matters here. `^0.19.0` resolves to `>=0.19.0 <0.20.0`, so a
+`npm update` alone would never have picked these tags up -- the dependency range had
+to be bumped explicitly.
+
+---
+
 ## 0.15.0 (2024-10-22)
